@@ -1,0 +1,109 @@
+body{
+    background-color: #F0F8FF;
+    font-family: sans-serif;
+}
+
+.container{
+    margin-top: 30px;
+    margin-left: 25%;
+    padding: 10px;
+    width: 500px;
+    height: 100%;
+    border: 1px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 5px 3px 6px 5px gray;
+}
+
+.heading{
+    text-align: center;
+    font-size: 24px;
+}
+ 
+.heading h1{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    color: DimGrey;
+}
+
+.input{
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    outline: inherit;
+    padding-left: 10px;
+    font-size: 18px;
+    border:2px solid #808080;
+}
+
+.addBtn, .dltBtn{
+    flex-wrap: wrap;
+    width: 80px;
+    height: 30px;
+    border-radius: 25px;
+    border: none;
+	cursor: pointer;
+    outline: inherit;
+    background-color: #5F9EA0;
+    color: white;
+    margin-top: 10px;
+}
+button:active{
+    font-size: 12px;
+}
+
+#todo-list{
+    text-align: left;
+    font-size: 16px;
+    padding: 20px;
+}
+#todo-list .liDesign{
+    border-bottom: 1px solid #696969;
+    padding: 15px;
+    width: 410px;
+}
+.editBtn, .deleteBtn{
+    float: right;
+    width: 80px;
+    height: 30px;
+    border-radius: 25px;
+    border: none;
+    background-color: #D3D3D3;
+	cursor: pointer;
+    outline: inherit;
+    margin-left: 5px;
+    margin-right: 0px;
+}
+
+.app-design{
+   justify-content: space-between;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    .container{
+        width: 80%;
+        margin: 10px;        
+    }
+
+    .input{
+        width: 70%;
+    }
+
+    #todo-list{
+        text-align: left;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #todo-list .liDesign{
+        width: 90%;
+        padding: 15px;
+    }
+
+    .editBtn, .deleteBtn{
+        width: 60px;
+        height: 30px;
+    }
+}
